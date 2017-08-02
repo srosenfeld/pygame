@@ -326,7 +326,7 @@ def main():
         # Check for successful attacks
         hit_ships = pygame.sprite.groupcollide(
             enemies, weapon_fire, True, True)
-        for k, v in hit_ships.iteritems():
+        for k, v in hit_ships.items():
             k.kill()
             for i in v:
                 i.kill()
